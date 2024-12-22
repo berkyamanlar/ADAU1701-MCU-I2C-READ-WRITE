@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- *
+ * This software is distributed in the hope that it will be useful,
+ * but is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * This software may only be used to program products purchased from
+ * Analog Devices for incorporation by you into audio products that
+ * are intended for resale to audio product end users. This software
+ * may not be distributed whole or in any part to third parties.
+ *
+ * Copyright © 2024 Analog Devices, Inc. All rights reserved.
+ */
+-->
+<!--NetList XML file-->
+<NetList>
+    <IC name=" IC 1 " type="DSPSigma100">
+        <Schematic>
+            <Algorithm name="SwitchAlg1" friendlyname="OnOff 5_23 Output " cell="Switch1 " location="{X=693, Y=66} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C16_A0_P1_out" dir="out" link="Link8" />
+            </Algorithm>
+            <Algorithm name="ICSigma100In1" friendlyname="170x\140x input " cell="Input1 " location="{X=7, Y=524} " Growth="10 " GrowthB="0 " FS="48000">
+                <Link pin="O_C0_A0_P1_out" dir="out" link="Link14" />
+                <Link pin="O_C0_A0_P2_out" dir="out" link="Link13" />
+                <Link pin="O_C0_A0_P3_out" dir="out" link="Link15" />
+                <Link pin="O_C0_A0_P4_out" dir="out" link="Link16" />
+            </Algorithm>
+            <Algorithm name="DCInpAlg3" friendlyname="dc Input " cell="DC1 " location="{X=781, Y=390} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C91_A0_P1_out" dir="out" link="Link1" />
+            </Algorithm>
+            <Algorithm name="sin_lookupAlg19401" friendlyname="Tone Synthesis (lookup/sine) " cell="Tone1 " location="{X=384, Y=639} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C101_A0_P1_out" dir="out" link="Link12" />
+            </Algorithm>
+            <Algorithm name="SwitchAlg2" friendlyname="OnOff 5_23 Output " cell="Switch1_2 " location="{X=791, Y=170} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C8_A0_P1_out" dir="out" link="Link9" />
+            </Algorithm>
+            <Algorithm name="SwitchAlg3" friendlyname="OnOff 5_23 Output " cell="Switch1_3 " location="{X=870, Y=220} " Growth="0 " GrowthB="0 " FS="48000">
+                <Link pin="O_C22_A0_P1_out" dir="out" link="Link10" />
+            </Algorithm>
+            <Algorithm name="GPOAlg1" friendlyname="General Purpose Output 100 " cell="GPO1 " location="{X=1023, Y=89} " Growth="0 " GrowthB="0">
+                <Link pin="I_C20_A0_P1_in" dir="in" link="Link8" />
+            </Algorithm>
+            <Algorithm name="GPOAlg2" friendlyname="General Purpose Output 100 " cell="GPO1_2 " location="{X=1027, Y=130} " Growth="0 " GrowthB="0">
+                <Link pin="I_C29_A0_P1_in" dir="in" link="Link9" />
+            </Algorithm>
+            <Algorithm name="GPOAlg3" friendlyname="General Purpose Output 100 " cell="GPO1_3 " location="{X=1029, Y=183} " Growth="0 " GrowthB="0">
+                <Link pin="I_C31_A0_P1_in" dir="in" link="Link10" />
+            </Algorithm>
+            <Algorithm name="Gain1940AlgNS1" friendlyname="Gain (no slew) " cell="Gain3 " location="{X=569, Y=636} " Growth="0 " GrowthB="0">
+                <Link pin="I_C49_A0_P1_in" dir="in" link="Link12" />
+                <Link pin="O_C49_A0_P2_out" dir="out" link="Link2" />
+            </Algorithm>
+            <Algorithm name="Gain1940AlgNS3" friendlyname="Gain (no slew) " cell="Gain1 " location="{X=196, Y=507} " Growth="0 " GrowthB="0">
+                <Link pin="I_C137_A0_P1_in" dir="in" link="Link14" />
+                <Link pin="O_C137_A0_P2_out" dir="out" link="Link4" />
+            </Algorithm>
+            <Algorithm name="ReadBackAlg1" friendlyname="Data Capture Register Readback " cell="ReadBack1 " location="{X=199, Y=260} " Growth="0 " GrowthB="0">
+                <Link pin="I_C9_A0_P1_in" dir="in" link="Link14" />
+            </Algorithm>
+            <Algorithm name="ReadBackAlg2" friendlyname="Data Capture Register Readback " cell="ReadBack2 " location="{X=229, Y=601} " Growth="0 " GrowthB="0">
+                <Link pin="I_C86_A0_P1_in" dir="in" link="Link13" />
+            </Algorithm>
+            <Algorithm name="ReadBackAlg3" friendlyname="Data Capture Register Readback " cell="ReadBack3 " location="{X=215, Y=728} " Growth="0 " GrowthB="0">
+                <Link pin="I_C103_A0_P1_in" dir="in" link="Link15" />
+            </Algorithm>
+            <Algorithm name="ReadBackAlg4" friendlyname="Data Capture Register Readback " cell="ReadBack4 " location="{X=195, Y=881} " Growth="0 " GrowthB="0">
+                <Link pin="I_C110_A0_P1_in" dir="in" link="Link16" />
+            </Algorithm>
+            <Algorithm name="ICSigma100Out1" friendlyname="170x\140x output " cell="Output1 " location="{X=853, Y=648} " Growth="0 " GrowthB="0">
+                <Link pin="I_C41_A0_P1_in" dir="in" link="Link2" />
+            </Algorithm>
+            <Algorithm name="EQ1940Single1" friendlyname="1 Channel - Double Precision " cell="Gen Filter1 " location="{X=365, Y=499} " Growth="1 " GrowthB="0">
+                <Link pin="I_C163_A0_P1_in" dir="in" link="Link4" />
+                <Link pin="O_C163_A0_P2_out" dir="out" link="Link5" />
+            </Algorithm>
+            <Algorithm name="EQ1940Single2" friendlyname="1 Channel - Double Precision " cell="Gen Filter2 " location="{X=444, Y=498} " Growth="1 " GrowthB="0">
+                <Link pin="I_C166_A0_P1_in" dir="in" link="Link5" />
+                <Link pin="O_C166_A0_P2_out" dir="out" link="Link6" />
+            </Algorithm>
+            <Algorithm name="MultAlg1" friendlyname="Multiplication " cell="X1 " location="{X=556, Y=519} " Growth="0 " GrowthB="0">
+                <Link pin="I_C35_A0_P1_in" dir="in" link="Link6" />
+                <Link pin="I_C35_A0_P2_in" dir="in" link="Link12" />
+                <Link pin="O_C35_A0_P3_out" dir="out" link="Link7" />
+            </Algorithm>
+            <Algorithm name="FistOrderSingle2" friendlyname="1st order filter " cell="Gen 1st Order1_2 " location="{X=631, Y=492} " Growth="1 " GrowthB="0">
+                <Link pin="I_C74_A0_P1_in" dir="in" link="Link7" />
+                <Link pin="O_C74_A0_P2_out" dir="out" link="Link11" />
+            </Algorithm>
+            <Algorithm name="Gain1940AlgNS2" friendlyname="Gain (no slew) " cell="Gain2 " location="{X=790, Y=509} " Growth="0 " GrowthB="0">
+                <Link pin="I_C54_A0_P1_in" dir="in" link="Link11" />
+                <Link pin="O_C54_A0_P2_out" dir="out" link="Link0" />
+            </Algorithm>
+            <Algorithm name="AdderAlg2" friendlyname="Signal Mix " cell="Add1_2 " location="{X=949, Y=515} " Growth="2 " GrowthB="0">
+                <Link pin="I_C87_A0_P2_in" dir="in" link="Link1" />
+                <Link pin="I_C87_A0_P3_in" dir="in" link="Link0" />
+                <Link pin="O_C87_A0_P1_out" dir="out" link="Link3" />
+            </Algorithm>
+            <Algorithm name="ICSigma100Out2" friendlyname="170x\140x output " cell="Output2 " location="{X=1014, Y=518} " Growth="0 " GrowthB="0">
+                <Link pin="I_C43_A0_P1_in" dir="in" link="Link3" />
+            </Algorithm>
+        </Schematic>
+    </IC>
+</NetList>
